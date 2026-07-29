@@ -109,4 +109,4 @@ media extension, and any visible error details. Do not attach private media.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+PolyForm Noncommercial License 1.0.0
