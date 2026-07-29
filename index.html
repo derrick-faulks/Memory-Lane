@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Memory Lane</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <div class="eyebrow">YOUR PRIVATE LIBRARY</div>
+      <h1>Memory Lane</h1>
+    </div>
+    <div class="actions">
+      <select id="kind" aria-label="Media type">
+        <option value="all">Photos & videos</option>
+        <option value="image">Photos</option>
+        <option value="video">Videos</option>
+      </select>
+      <select id="year" aria-label="Year"><option value="">All years</option></select>
+      <button id="scan">Refresh library</button>
+      <button id="library">Change folder</button>
+      <button id="quit">Quit app</button>
+    </div>
+  </header>
+  <section class="hero">
+    <div><span id="total">—</span><small>moments indexed</small></div>
+    <div><span id="range">—</span><small>timeline</small></div>
+    <div class="status"><span class="dot"></span><span id="status">Connecting…</span><small id="folder"></small></div>
+  </section>
+  <main id="timeline"></main>
+  <div id="empty" hidden>No media found for this filter.</div>
+  <div id="sentinel"></div>
+  <dialog id="viewer">
+    <button id="close" aria-label="Close">×</button>
+    <button class="nav prev" id="prev" aria-label="Previous">‹</button>
+    <div id="stage"></div>
+    <button class="nav next" id="next" aria-label="Next">›</button>
+    <div id="caption"></div>
+  </dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
